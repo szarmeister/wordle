@@ -1,0 +1,36 @@
+.grid {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guessRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.guessRow.past > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.guessRow.past > div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.guessRow.past > div:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.guessRow.past > div:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.guessRow.past > div:nth-child(6) {
+    animation-delay: 1s;
+}

@@ -1,0 +1,77 @@
+.letterCell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    border: solid black 4px;
+    border-radius: 4px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.green {
+    --background-color: #32CD32;
+    color: #000000;
+    animation: flipping 0.5s ease forwards;
+}
+
+.yellow {
+    --background-color: #CCCC00;
+    color: #000000;
+    animation: flipping 0.5s ease forwards;
+}
+
+.grey {
+    --background-color: #808080;
+    color: #000000;
+    animation: flipping 0.5s ease forwards;
+}
+
+.current {
+    animation: bounce 0.2s ease-in-out forwards;
+}
+
+
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0);
+        background-color: #FFFFFF;
+    }
+
+    45% {
+        transform: rotateX(90deg);
+        background-color: #FFFFFF;
+    }
+
+    55% {
+        transform: rotateX(90deg);
+        background-color: var(--background-color);
+        border-color: var(--background-color);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        background-color: var(--background-color);
+        border-color: var(--background-color);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+

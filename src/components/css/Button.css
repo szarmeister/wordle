@@ -1,0 +1,56 @@
+.keyboardButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    height: 100px;
+    width: 70px;
+    cursor: pointer;
+    background-color: #bebbbb;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.keyboardButtonSpecial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    height: 100px;
+    width: 115px;
+    cursor: pointer;
+    background-color: #bebbbb;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.keyboardButtonGreen {
+    background-color: #32CD32;
+}
+
+.keyboardButtonYellow {
+    background-color: #CCCC00;
+}
+
+.keyboardButtonGrey {
+    background-color: #808080;
+}
+
+.keyboardButton:hover {
+    background-color: black;
+}
+
+.keyboardButtonSpecial:hover {
+    background-color: black;
+}
+
