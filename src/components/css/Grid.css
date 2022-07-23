@@ -34,3 +34,8 @@
 .guessRow.past > div:nth-child(6) {
     animation-delay: 1s;
 }
+
+.guessRow.past > div:nth-child(7) {
+    animation-delay: 1.2s;
+}
+

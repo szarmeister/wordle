@@ -62,7 +62,6 @@ const useWordle = ({initialGrid, initialGridResult, givenWord}) => {
     };
 
     const handleKeyUp = ({key}) => {
-        console.log(key);
         if (key === "Enter") {
             handleSubmitGuess();
         } else if (key === "Delete" || key === "Backspace") {
